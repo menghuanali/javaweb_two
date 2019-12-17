@@ -1,0 +1,314 @@
+html body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+
+/*********************header************************/
+
+#header {
+    background-color: blue;
+}
+
+#header-content {
+    margin: 0 auto;
+    /*水平居中*/
+    height: 80px;
+    width: 800px;
+}
+
+#logo {
+    float: left;
+    color: red;
+    font-size: xx-large;
+    font-weight: 600;
+}
+
+#search {
+    float: left;
+    margin-left: 70px;
+}
+
+#double-link {
+    float: right;
+    font-weight: bolder;
+    background-color: white;
+    height: 35px;
+    width: 120px;
+}
+
+#header input {
+    background-image: url(../image/lookup.png);
+    /*注意这里是css文件目录下，所以需要上一层*/
+    /*这里图片的信息是518*34 所以input的高度是34*/
+    padding: 0;
+    /*消去自带的padding*/
+    height: 29px;
+    width: 279px;
+    /*宽度需要减去padding-lef和padding-right*/
+    padding-left: 25px;
+    /*让文字显示在放大镜符号🔍右边*/
+    padding-right: 10px;
+    /*让长文字不至于抵达右边距*/
+    border: none;
+    /*去掉文本框的边框*/
+    outline: none;
+    /*去掉在一些浏览器中input高亮边框*/
+}
+
+.v-link {
+    position: relative;
+    margin-left: 10px;
+    top: 6px;
+}
+
+
+/*********************content************************/
+
+#content {
+    margin: 5px auto;
+    width: 800px;
+    word-wrap: break-word;
+    /*加上长单词也换行*/
+}
+
+
+/***********content-left************/
+
+#content-left {
+    width: 330px;
+    height: 490px;
+    margin-left: 5px;
+    padding: 5px;
+    float: left;
+    border: #808080 1px solid;
+}
+
+#add-name {
+    width: 220px;
+}
+
+#service-lists {
+    margin-top: 10px;
+    margin: 10px 0;
+}
+
+.a-service-name {
+    width: 220px;
+    border: #808080 1px solid;
+    float: left;
+    margin-top: -1px;
+    text-align: center;
+    cursor: pointer;
+}
+.a-service-btnno{
+	border: none;
+    padding: 0;
+    margin: 0;
+}
+.a-service-btn {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    background-color: white;
+    color: rgb(0, 47, 255);
+    margin-left: 10px;
+    padding-top: 4px;
+    cursor: pointer;
+}
+
+.a-service-chicked {
+    background-color: greenyellow;
+}
+
+
+.a-service-btn:hover {
+    color: red;
+}
+
+#add-submit {
+    border-radius: 13%;
+    width: 80px;
+    height: 25px;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/***********content-center************/
+
+#content-center {
+    width: 80px;
+    height: 490px;
+    padding: 5px;
+    float: left;
+    border: #808080 1px solid;
+    margin: 0 5px;
+}
+
+#add-btn {
+    cursor: pointer;
+    width: 70px;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    outline: none;
+    background-color: white;
+}
+
+#delete-btn {
+    cursor: pointer;
+    width: 70px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: white;
+    outline: none;
+}
+
+
+/***********content-right************/
+
+#content-right {
+    width: 330px;
+    height: 490px;
+    margin-right: 5px;
+    padding: 5px;
+    float: left;
+    border: #808080 1px solid;
+}
+
+.a-the-service {
+    border: black 1px solid;
+    margin-top: -1px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+
+.one-service-name {
+    border: #808080 1px solid;
+    width: 290px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: -1px;
+    cursor: pointer;
+}
+
+
+/*********************footer************************/
+
+#footer {
+    background-color: rgba(0, 0, 0, 0.781);
+}
+
+#footer-content {
+    width: 800px;
+    height: 30px;
+    font-size: 12px;
+    margin: 0 auto;
+    position: relative;
+    /* overflow: hidden; */
+    /*css特性：
+if父元素设置了margin，则第一个子元素的margin-top会和父元素的top合并 
+最后一个子元素的margin-bottom会和父元素的margin-bottom合并
+所以
+方法1.给父元素加上overflow: hidden; 
+方法2.如这里所作：
+父：{
+    position: relative;
+}
+子：{
+    position: absolute;
+    top:xx;
+    bottom:xx;
+}
+*/
+}
+
+#footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /*ul会有自带的margin属性*/
+    position: absolute;
+    top: 15%;
+    left: 30%;
+}
+
+#footer-links li {
+    float: left;
+}
+
+#footer-links a {
+    color: #808080;
+}
+
+.footer-space {
+    margin: 0 6px;
+    color: #808080;
+}
+
+#updata {
+    position: absolute;
+    color: #808080;
+    top: 15%;
+}
+
+#copyright {
+    position: absolute;
+    color: #808080;
+    top: 15%;
+    left: 15%;
+}
+
+
+/*********************辅助样式************************/
+
+
+/* 清除浮动 */
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix::after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+/* 垂直居中 */
+
+.v-center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    /*y值移动负50%即向上移动自身宽度的50%*/
+}
+
+
+/* 水平居中 */
+
+.h-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}

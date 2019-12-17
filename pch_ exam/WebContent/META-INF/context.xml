@@ -1,0 +1,8 @@
+<Context>
+	<Resource name="jdbc/PCHtion"
+		auth="Container" type="javax.sql.DataSource"
+		maxActive="500" maxIdle="300" maxWait="1000"
+		username="root" password="159682"
+		driverClassName="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://localhost:3306/pch_exam?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false"/>
+</Context>

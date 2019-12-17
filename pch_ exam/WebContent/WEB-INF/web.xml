@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>pch_ exam</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>PCHservlet</display-name>
+    <servlet-name>PCHservlet</servlet-name>
+    <servlet-class>pch_servlet.PCHservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PCHservlet</servlet-name>
+    <url-pattern>/PCHservlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PCHdelete</display-name>
+    <servlet-name>PCHdelete</servlet-name>
+    <servlet-class>pch_servlet.PCHdelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PCHdelete</servlet-name>
+    <url-pattern>/PCHdelete</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PCHrelationInsert</display-name>
+    <servlet-name>PCHrelationInsert</servlet-name>
+    <servlet-class>pch_servlet.PCHrelationInsert</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PCHrelationInsert</servlet-name>
+    <url-pattern>/PCHrelationInsert</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PCHrelationSelete</display-name>
+    <servlet-name>PCHrelationSelete</servlet-name>
+    <servlet-class>pch_servlet.PCHrelationSelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PCHrelationSelete</servlet-name>
+    <url-pattern>/PCHrelationSelete</url-pattern>
+  </servlet-mapping>
+</web-app>
